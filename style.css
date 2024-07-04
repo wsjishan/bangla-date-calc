@@ -7,6 +7,7 @@ body {
   color: #fff;
   font-family: Arial, sans-serif;
   padding: 10px;
+  margin: 0;
 }
 
 .container {
@@ -27,7 +28,6 @@ input[type="date"], input[type="number"] {
   margin: 8px 0;
   box-sizing: border-box;
   border: 3px solid #ccc;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   outline: none;
   background: #333;
@@ -58,8 +58,15 @@ button {
   }
 
   .container {
+      max-width: 100%;
       border-radius: 0;
       box-shadow: none;
       border: none;
+      padding: 10px;
+  }
+
+  input[type="date"], input[type="number"], button {
+      font-size: 14px;
+      padding: 10px;
   }
 }
